@@ -832,59 +832,14 @@ section,
 /*--------------------------------------------------------------
 # Location Section
 --------------------------------------------------------------*/
-.location .service-item {
-  position: relative;
-  height: 100%;
-  margin-bottom: 30px;
+.location {
+  background: linear-gradient(to bottom, #ffffff, #14213d); 
+  padding: 50px ; 
 }
 
-.location .service-item .icon {
-  margin-right: 20px;
-}
 
-.location .service-item .icon i {
-  color: var(--accent-color);
-  font-size: 40px;
-  line-height: 0;
-  transition: 0.3s;
-}
 
-.location .service-item:hover .icon i {
-  color: var(--accent-color);
-}
 
-.location .service-item .title {
-  color: var(--heading-color);
-  font-weight: 700;
-  margin-bottom: 10px;
-  font-size: 20px;
-  transition: 0.3s;
-}
-
-.location .service-item .description {
-  font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin-bottom: 10px;
-}
-
-.location .service-item .readmore {
-  display: flex;
-  align-items: center;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  transition: 0.3s;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.location .service-item .readmore i {
-  margin-left: 8px;
-}
-
-.location .service-item:hover .title,
-.location .service-item:hover .readmore,
-.location .service-item:hover .icon i {
-  color: var(--accent-color);
-}
 
 /*--------------------------------------------------------------
 # Employees Section
@@ -1525,3 +1480,62 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+.info-container,
+    .map-container {
+      max-width: 600px;
+
+      color: black; /* Warna teks hitam untuk kontainer */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+    .info-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .info-container h2 {
+      color: #f39c12;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      size:10px;
+      gap: 10px;
+    }
+
+    .info-container .btn {
+      margin-top: 10px;
+      background-color: #d87c04;
+      color: white;
+      border: none;
+    }
+
+    .info-container .btn:hover {
+      background-color: #d87c04;
+    }
+
+    .map-container iframe {
+      width: 140%;
+      height: 550px;
+      border: 0;
+      border-radius: 10px;
+    }
+
+    section .row.mt-4 div {
+      font-size: 0.9rem;
+    }
+
+    section .row.mt-4 h5 {
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .info-container,
+      .map-container {
+        max-width: 100%; /* Pastikan kontainer menyesuaikan layar kecil */
+      }
+    }
