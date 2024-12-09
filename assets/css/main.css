@@ -938,115 +938,115 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Partnership Section
---------------------------------------------------------------*/
+/* Partnership Section */
+.partnership {
+  padding: 60px 0;
+  background-color: #f8f9fa; /* Light background */
+}
+
+.partnership .section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.partnership .section-title p {
+  font-size: 18px;
+  color: #666;
+}
+
 .partnership .portfolio-filters {
-  padding: 0;
-  margin: 0 auto 20px auto;
-  list-style: none;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 .partnership .portfolio-filters li {
   cursor: pointer;
   display: inline-block;
-  padding: 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   margin: 0 10px;
-  line-height: 1;
-  margin-bottom: 5px;
+  color: #555;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
   transition: all 0.3s ease-in-out;
 }
 
 .partnership .portfolio-filters li:hover,
 .partnership .portfolio-filters li.filter-active {
-  color: var(--accent-color);
-}
-
-.partnership .portfolio-filters li:first-child {
-  margin-left: 0;
-}
-
-.partnership .portfolio-filters li:last-child {
-  margin-right: 0;
-}
-
-@media (max-width: 575px) {
-  .partnership .portfolio-filters li {
-    font-size: 14px;
-    margin: 0 5px;
-  }
+  color: #fff;
+  background-color: var(--accent-color); /* Primary color */
 }
 
 .partnership .portfolio-content {
   position: relative;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.partnership .portfolio-content:hover {
+  transform: scale(1.05);
 }
 
 .partnership .portfolio-content img {
-  transition: 0.3s;
+  width: 100%;
+  height: 250px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensures the image fills the area without distortion */
+  transition: transform 0.3s ease-in-out;
 }
 
-.partnership .portfolio-content .portfolio-info {
-  opacity: 0;
+.partnership .portfolio-content:hover img {
+  transform: scale(1.1);
+}
+
+.partnership .portfolio-info {
   position: absolute;
-  inset: 0;
-  z-index: 3;
-  transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-}
-
-.partnership .portfolio-content .portfolio-info h4 {
-  font-size: 14px;
-  padding: 5px 10px;
-  font-weight: 400;
-  color: #ffffff;
-  display: inline-block;
-  background-color: var(--accent-color);
-}
-
-.partnership .portfolio-content .portfolio-info p {
-  position: absolute;
-  bottom: 10px;
-  text-align: center;
-  display: inline-block;
+  top: 0;
   left: 0;
   right: 0;
-  font-size: 16px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.partnership .portfolio-content .portfolio-info .preview-link,
-.partnership .portfolio-content .portfolio-info .details-link {
-  position: absolute;
-  left: calc(50% - 40px);
-  font-size: 26px;
-  top: calc(50% - 14px);
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
   color: #fff;
-  transition: 0.3s;
-  line-height: 1.2;
-}
-
-.partnership .portfolio-content .portfolio-info .preview-link:hover,
-.partnership .portfolio-content .portfolio-info .details-link:hover {
-  color: var(--accent-color);
-}
-
-.partnership .portfolio-content .portfolio-info .details-link {
-  left: 50%;
-  font-size: 34px;
-  line-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .partnership .portfolio-content:hover .portfolio-info {
   opacity: 1;
 }
 
-.partnership .portfolio-content:hover img {
-  transform: scale(1.1);
+.partnership .portfolio-info h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.partnership .portfolio-info p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.partnership .portfolio-info .preview-link,
+.partnership .portfolio-info .details-link {
+  font-size: 24px;
+  margin: 0 5px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.partnership .portfolio-info .preview-link:hover,
+.partnership .portfolio-info .details-link:hover {
+  color: var(--accent-color); /* Accent color */
 }
 
 /*--------------------------------------------------------------
